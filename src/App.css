@@ -1,61 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-
 .hero-container{
   width: 100%;
-  height: 37em;
-  font-family: 'Lato', sans-serif;
+  height: 41em;
+  font-family: 'Roboto', sans-serif;
   background-color: #02144a;
   color: #fff;
   border-radius: 0 0 0 80px;
+  display: flex;
+ 
 }
 nav{
   width: 100%;
   margin-left: 4rem;
-  margin-top: -0;
+  display: flex;
 }
 .nav-logo{
-  float:left;
   width: 40%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  padding-top: 15px;
+  margin-top: 1rem;
 }
 .nav-links{
   width: 60%;
-  float:  left;
 }
 .nav-items li{
   display: inline-block;
   margin-left: 5rem;
+  margin-top: 2.6rem;
 }
 .nav-items li a{
   text-decoration: none;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #fff;
 }
 .hero-div{
-  
+display: flex;
+width: 100%;
+justify-content: left;
+margin-top: 10rem;
+margin-left: -77rem;
 }
 .hero-text{
+text-align: left;
+align-content: center;
+margin-top: 0.8rem;
+}
+.hero-text h1{
+  font-size: 45px;
 }
 .hero-text span{
   color: #fbb03b;
 }
-.mockup{
-  height: auto;
-  max-width: 100%;
+.hero-text p{
+  font-size: 18px;
 }
-.mockup img{
-  width: 200px;
-  height: 350px;
-  left: -500px;
-  top: ;
+.btn-reg{
+  border: 1px solid #fbb03b;
+  background-color: #fbb03b;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 18px;
+}
+.mockup{
+  margin-top: -6.3rem;
+  margin-left: 15rem;
+  
+}
+.mockup2{
+  margin-top: -30rem;
+  margin-left: -10rem;
+  
+}
+
+@media screen and (max-width: 992px) {
+  .App{
+    width: 100%;
+    overflow: hidden;
+  }
+  .hero-container{
+    width: 100%;
+    height: 45em;
+  
+  }
+  .nav-links{
+    display: none;
+  }
+  .hero-div{
+    flex-direction: column;
+    margin-left: -28rem;
+    margin-right: 2rem;
+    margin-top: 6rem;
+  }
+ 
+  .hero-text h1{
+    font-size: 30px;
+  }
+  .hero-text p{
+    font-size: 14px;
+  }
+  .mockup{
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    margin: 2.5rem 7rem;
+  }
+  .mockup1{
+    height: auto;
+    max-width: 100%;
+  }
+  .mockup2{
+    height: auto;
+    max-width: 100%;
+    
+  }
+}
+@media screen and (max-width: 320px) {
+  .App{
+    width: 100%;
+    overflow: hidden;
+  }
+  .nav-logo{
+    width: 40%;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  .hero-div{
+   margin-left: 20rem;
+   margin-right: 2rem
+  }
 }
 .about-container{
   margin: 6rem 5rem;
@@ -108,6 +189,27 @@ nav{
   background-color: #d1daf4;
   width: 20px;
   height: 20px;
+  position: relative;
+  right:-16px;
+  top: 16px;
+  
+}
+.two img {
+  background-color: #d1daf4;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  right:-16px;
+  top: 16px;
+  
+}
+.three img {
+  background-color: #d1daf4;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  right:-16px;
+  top: 16px;
   
 }
 .two {
@@ -123,12 +225,20 @@ nav{
 .col  h5{
   margin-top: 30px;
   font-size: 1.2rem;
+  text-align: left;
 }
 .col  li {
   margin-top: 20px;
 }
 .col  ul {
   margin-top: 5px;
+  align-content: left;
+}
+@media screen and (max-width: 1000px) {
+  .about-container{
+    margin: 0rem 2rem;
+    height: auto;
+  }
 }
 @media screen and (max-width: 992px) {
   .about-container{
@@ -150,43 +260,71 @@ nav{
   }
 }
 .howItWorks{
-  margin: 10rem 5rem;
-  height: 30rem;
+  width: 100%;
+  margin-top: 10rem;
+  height: 40rem;
+  background: #f0f1f5;
 }
-
 .phone{
   float: left;
 }
 .rect1{
+  margin-top: -35px;
   width: 30%;
-  height: 30%;
-  position: relative;
-  left: -15rem;
-}
-.rect2{
-  width: 30%;
-  height: 30%;
-  position: relative;
-  left: -15rem;
+  height: 100%;
+  position: absolute;
+  left: 8rem;
+  
 }
 .howItWorks-text {
   float: right;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-top: 5rem;
+  margin-right: 5rem;
 }
-.howItWorks-text h6 h4{
-  text-align: right;
+.howItWorks-text h6{
+  color: #fbb03b;
+  padding-left: 2.5rem;
+}
+.howItWorks-text  h4{
+  padding-left: 2.5rem;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.howItWorks-text  span{
+  color: #fbb03b;
+}
+@media screen and (max-width: 1000px) {
+  .howItWorks{
+    margin: 5rem 2rem;
+    height: auto;
+    height: 55rem;
+  }
+  .rect1{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+  .howItWorks-text{
+    margin-top: 32rem;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 992px) {
   .howItWorks{
-    margin: 45rem 2rem;
+    margin: 5rem 0rem;
     flex-wrap: wrap;
     text-align: left;
-    width: 80%;
+    width: 100%;
+    overflow: hidden;
   }
 }
 .sponsorship{
-  margin: 6rem 5rem;
+  margin: 7rem 5rem;
   height: 30rem;
 }
 .sponsor{
@@ -202,15 +340,15 @@ nav{
   font-size: 2rem;
   margin-top: 10px;
 }
-button{
-  border: 1px solid #fbb03b;
-  background-color: #f7f7f7;
+.button{
+  border: 2px solid #fbb03b;
+  background-color: #fff;
   padding: 0.6rem 2rem;
   text-decoration: none;
   color: #000;
   border-radius: 25px;
 }
-.gadgets{
+.gadgets {
   display: flex;
   width: 50%;
   margin: auto;
@@ -220,9 +358,16 @@ button{
   width: 500px;
   height: 400px;
 }
+@media screen and (max-width: 1000px) {
+  .sponsorship{
+    margin: auto;
+    margin: 0rem 2rem;
+    height: auto;
+  }
+}
 @media screen and (max-width: 992px) {
   .sponsorship{
-    margin: 55rem 2rem;
+    margin: 5rem 2rem;
   }
   .sponsor{
     text-align: left;
@@ -239,16 +384,15 @@ button{
   }
 }
 .skillsContainer{
-  margin: 9rem 5rem;
+  margin: 11rem 5rem;
   height: 20rem;
-}
-.skillsContainer{
   text-align: center;
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
 .skillsContainer h6{
   color: #fbb03b;
+  margin-top: 6rem;
 }
 .skillsContainer h4{
   font-weight: 700;
@@ -257,27 +401,37 @@ button{
 
 .skills{
   display: flex;
-  column-gap: 40px;
+  column-gap: 30px;
 }
-.skills a{
-  width: 350px;
+.skills .bn{
+  cursor: pointer;
+  width: 450px;
   height: 30px;
-  background-color: #ebe9e9;
-  padding: 1rem 2.1rem;
+  background-color: #fff;
+  padding: 1.5rem 2.1rem;
+  padding-bottom: 2rem;
   text-decoration: none;
+  font-size: 1rem;
 }
-.skills a span{
-  width: 50px;
-  height: 50px;
+.skills .bn span{
+  float: right;
+  width: 10px;
+  height: 10px;
   border: 1px solid #000;
   border-radius: 50% 50%;
-  padding: 4px;
+  padding: 5px;
+}
+@media screen and (max-width: 1000px) {
+  .skillsContainer{
+    margin: 0rem 2rem;
+    height: auto;
+  }
 }
 @media screen and (max-width: 992px) {
   .skillsContainer{
-    margin: 20rem 2rem;
+    margin: 5rem 5rem;
     text-align: left;
-    width: 80%;
+    width: 70%;
   }
   .skillsContainer h4{
     font-size: 1.2rem;
@@ -288,6 +442,9 @@ button{
   .skills{
     flex-wrap: wrap;
     row-gap: 40px;
+  }
+  .skills a{
+    text-align: center;
   }
 }
 .recruitContainer{
@@ -306,16 +463,16 @@ button{
 }
 .btn{
   background-color: #fbb03b;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 2.5rem;
   text-decoration: none;
   color: #fff;
   border-radius: 25px;
 }
 @media screen and (max-width: 992px) {
   .recruitContainer{
-    margin: 2rem 2rem;
+    margin: 2rem 5rem;
     text-align: left;
-    width: 80%;
+    width: 70%;
   }
   .recruitContainer h4{
     font-size: 1.2rem;
@@ -334,55 +491,101 @@ button{
   color: #fbb03b;
 }
 .blog h4{
-  font-weight: 700;
   font-size: 2rem;
+}
+.blog h5{
+  font-size: 1rem;
+}
+.blog p{
+  font-size: 0.8rem;
+}
+.cards {
+  display: flex;
+  column-gap: 40px;
+  margin-left: -17rem;
+  }
+.card{
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.container {
+  padding: 2px 16px;
+  flex: 1;
+  width: 20rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
 }
 @media screen and (max-width: 992px) {
   .blog {
     margin: 2rem 2rem;
     text-align: left;
     width: 80%;
+    height: auto;
+  }
+  .blog  h6{
+    margin: 2rem 3rem;
   }
   .blog  h4{
     font-size: 1.2rem;
+    margin: 2rem 3rem;
   }
   .blog p{
     font-size: 0.8rem;
+    margin: 2rem 2rem;
+  }
+  .cards{
+    height: auto;
+    flex-wrap: wrap;
+    margin: auto;
+    row-gap: 40px;
   }
 }
-.featured{
+.featured{ 
   text-align: center;
-  width: 50%;
+  width: 100%;
   margin: auto;
   height: 30rem;
-}
-.featured-list{
-  border: 1px solid #f7f7f7;
-  background-color: #f7f7f7 ;
-  width: 70px;
-  height: 70px;
-  border-radius: 5px;
-  padding: 1.2rem 5rem;
-  box-shadow: 5px 5px 5px 5px #f7f7f7;
-}
-.featured img{
-  height: 30px;
-  margin-top: 10px;
-  padding: 1rem 2rem;
+  padding-top: 3rem ;
   
 }
+.featured-list{
+  display: flex;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 1.2rem 6rem;
+  margin: auto;
+  
+}
+.stations{
+  width: 50px;
+  height: 50px;
+  margin-top: 3rem;
+  padding: 2rem 2rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px 5px #f7f7f7;
+  
+} 
 .featured h4{
   font-weight: 700;
   font-size: 2rem;
-}
+} 
 @media screen and (max-width: 992px) {
   .featured{
-    margin: 2rem 2rem;
+    margin: 3rem 4rem;
     text-align: left;
     width: 80%;
   }
   .featured  h4{
     font-size: 1.2rem;
+    margin: 3rem 2rem;
   }
   .featured img{
     height: auto;
@@ -394,8 +597,9 @@ button{
 }
 .testimonals{
   text-align: center;
-  width: 50%;
+  width: 90%;
   margin: auto;
+  margin-top: 6rem;
   height: 30rem;
 }
 .testimonals h6{
@@ -405,11 +609,68 @@ button{
   font-weight: 700;
   font-size: 2rem;
 }
+.testimonals .test-box{
+  display: flex;
+  width: 1440px;
+  height: 20rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.testimonals .test-box .bx{
+  display: inline-flex;
+  transform: translateX(0);
+  transition: .9s;
+}
+
+.testimonals .test-box .bx .test-col{
+  width: 350px;
+  height: 100%;
+  padding: 2rem;
+  background: hsl(0, 0%, 98%);
+  margin: 0 1rem 0 0;
+  position: relative;
+}
+.testimonals .controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.testimonals .mobile-controls{
+  display: none;
+}
+
+.testimonals .controls .left-arrow{
+  width: 2rem;
+  margin: 0 1rem;
+  transform: rotate(-180deg);
+  transition: .5s;
+}
+
+.testimonals .controls .left-arrow:hover{
+  transform: rotate(-180deg) scale(1.3);
+}
+
+.testimonals .controls .right-arrow{
+  width: 2rem;
+  margin: 0 1rem;
+  transition: .5s;
+}
+
+.testimonals .controls .right-arrow:hover{
+  transform: scale(1.3);
+}
+
 @media screen and (max-width: 992px) {
   .testimonals{
-    margin: 2rem 2rem;
+    margin: 5rem 4rem;
+    padding: 4rem 1rem;
     text-align: left;
     width: 80%;
+    height: auto;
   }
   .testimonals  h4{
     font-size: 1.2rem;
@@ -420,6 +681,7 @@ button{
   text-align: center;
   width: 50%;
   margin: auto;
+  margin: 4rem 4rem;
   height: 30rem;
 }
 .company h6{
@@ -434,6 +696,10 @@ button{
   margin-top: 10px;
   padding: 1rem 2rem;
 }
+.scholarx-logo{
+  position: relative;
+  top: 1.5rem;
+}
 .partners img{
   height: 30px;
   margin-top: 10px;
@@ -441,17 +707,20 @@ button{
 }
 @media screen and (max-width: 992px) {
   .scholarx{
-    margin: 2rem 2rem;
+    margin: 2rem 4.5rem;
     text-align: left;
+    justify-content: left;
     width: 80%;
   }
   .company  h4{
     font-size: 1rem;
   }
-  .company h4 img{
-    padding: 0.2rem 1rem;
+  .scholarx-logo{
+    position: relative;
+    top: 1.5rem;
   }
   .partners img{
+    max-width: 100%;
     height: 30px;
     margin-top: 10px;
     padding: 1rem 0.9rem;
@@ -461,14 +730,19 @@ button{
   height: 8rem;
   color: #fff;
   background: #02144A;
+  display: flex;
 }
-.footer img{
-
+.footer-logo{
+  width: 40%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin: 1rem 5rem;
 }
 .footer p{
+  width: 100%;
   font-size: 1rem;
   margin-top: 20px;
-  text-align: center;
-  width: 50%;
+  padding: 3.5rem 1rem;
+  text-align: left;
   margin: auto;
 }
